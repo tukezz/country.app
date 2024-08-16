@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountryApp</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <ul id="mobil-nav">
+            <li><a href=""><i class="fa-solid fa-earth-americas"></i></a></li>
+            <li><a href=""><i class="sun" class="fa-solid fa-sun"></i></a></li>
+            <li><a onclick="ac()" class="fa-solid fa-bars"></a></li>
+        </ul>
+
+        <div id="burgermenu">
+            <ul id="burgernav">
+                <hr/>
+                <li><a class="areng" href="#" onclick="regionfilter('Europe')" >Europe</a></li>
+                <hr/>
+                <li><a class="areng" href="#" onclick="regionfilter('Asia')">Asia</a></li>
+                <hr/>
+                <li><a class="areng" href="#" onclick="regionfilter('Americas')">Americas</a></li>
+                <hr/>
+                <li><a class="areng" href="#" onclick="regionfilter('Africa')">Africa</a></li>
+                <hr/>
+                <li><a class="areng" href="#" onclick="regionfilter('Oceania')">Oceania</a></li>
+                <hr/>
+            </ul>
+        </div>
+
+        <div id="desktop-menu">
+            <ul id="desktop-nav">
+                <li><a href="#" onclick="regionfilter('Europe')" >Europe</a></li> 
+                <li><a href="#" onclick="regionfilter('Asia')">Asia</a></li>
+                <li><a href="#" onclick="regionfilter('Americas')">Americas</a></li>
+                <li><i class="fa-solid fa-earth-americas"></i></li>
+                <li><a href="#" onclick="regionfilter('Africa')">Africa</a></li>
+                <li><a href="#" onclick="regionfilter('Oceania')">Oceania</a></li>
+                <li><a href="#" onclick="regionfilter('Antarctic')">Antarctic</a></li>
+            </ul>
+            <a href="" class="sun"><i  class="fa-solid fa-sun"></i></a>
+
+        </div>
+    </header>
+    <main>
+        <div id="text">
+            <h1>Welcome to CountryApp Website</h1>
+            <h2>You can find data of any country in this website.</h2>
+            <div class="buttons">
+                <button class="look">Have a Look</button>
+                <button class="search">Search</button>
+            </div>
+        </div>
+
+        <div id="maintop"> </div>
+
+        <div id="cards">  </div>
+        <button class="show" onclick="add()">Show More...</button>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
